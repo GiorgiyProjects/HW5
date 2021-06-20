@@ -1,0 +1,4 @@
+/home/runner/work/HW5/HW5/CMakeFiles/edit_cache.dir
+/home/runner/work/HW5/HW5/CMakeFiles/rebuild_cache.dir
+/home/runner/work/HW5/HW5/CMakeFiles/tests.dir
+/home/runner/work/HW5/HW5/CMakeFiles/matrix.dir
