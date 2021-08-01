@@ -63,6 +63,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classMatrix-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Matrix&lt; T, DefaultValue &gt; Class Template Reference</div>  </div>
@@ -71,24 +72,36 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa40f0382d8561ca22eb36672cc42b466"><td class="memItemLeft" align="right" valign="top"><a id="aa40f0382d8561ca22eb36672cc42b466"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> ()</td></tr>
-<tr class="separator:aa40f0382d8561ca22eb36672cc42b466"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f8bef90bf8bba323b832cc58c50abff"><td class="memItemLeft" align="right" valign="top"><a id="a9f8bef90bf8bba323b832cc58c50abff"></a>
-<a class="el" href="classColumn.html">Column</a>&lt; T, mDefaultValue &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int i)</td></tr>
-<tr class="separator:a9f8bef90bf8bba323b832cc58c50abff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac51c4328b310232c27678a4ed2c44472"><td class="memItemLeft" align="right" valign="top"><a id="ac51c4328b310232c27678a4ed2c44472"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllNonDefValues</b> ()</td></tr>
-<tr class="separator:ac51c4328b310232c27678a4ed2c44472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af94fa0b8bc7d99ef0bb6d7622a8dade8"><td class="memItemLeft" align="right" valign="top"><a id="af94fa0b8bc7d99ef0bb6d7622a8dade8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EraseDefaultKeys</b> ()</td></tr>
-<tr class="separator:af94fa0b8bc7d99ef0bb6d7622a8dade8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabe0405fb9aee5221fe5c396ac88ab5e"><td class="memItemLeft" align="right" valign="top"><a id="aabe0405fb9aee5221fe5c396ac88ab5e"></a>
-iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
-<tr class="separator:aabe0405fb9aee5221fe5c396ac88ab5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68feb1c4514ee677647fef2d405c44e8"><td class="memItemLeft" align="right" valign="top"><a id="a68feb1c4514ee677647fef2d405c44e8"></a>
-iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
-<tr class="separator:a68feb1c4514ee677647fef2d405c44e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3104ccba3068df1d64a877f2a105e3f"><td class="memItemLeft" align="right" valign="top"><a id="af3104ccba3068df1d64a877f2a105e3f"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetId</b> ()</td></tr>
+<tr class="separator:af3104ccba3068df1d64a877f2a105e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf820e8bd8296ec6034e46aad9cffbf"><td class="memItemLeft" align="right" valign="top"><a id="a6bf820e8bd8296ec6034e46aad9cffbf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Matrix</b> (size_t id)</td></tr>
+<tr class="separator:a6bf820e8bd8296ec6034e46aad9cffbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e42cafafa13ebcf0005b4ad1d92fad"><td class="memItemLeft" align="right" valign="top"><a id="ae9e42cafafa13ebcf0005b4ad1d92fad"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="separator:ae9e42cafafa13ebcf0005b4ad1d92fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea3ce743946682197ab8af3352c1925"><td class="memItemLeft" align="right" valign="top"><a id="a1ea3ce743946682197ab8af3352c1925"></a>
+<a class="el" href="classElement.html">Element</a>&lt; T, DefaultValue &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>CopyDefaultElementToVec</b> (int row, int col, T val)</td></tr>
+<tr class="separator:a1ea3ce743946682197ab8af3352c1925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7318f22f3db6afe13b965d480749b2f"><td class="memItemLeft" align="right" valign="top"><a id="ad7318f22f3db6afe13b965d480749b2f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (<a class="el" href="classElement.html">Element</a>&lt; T, DefaultValue &gt; &amp;el)</td></tr>
+<tr class="separator:ad7318f22f3db6afe13b965d480749b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b506d4e5600845eb913fa0d9bd714f"><td class="memItemLeft" align="right" valign="top"><a id="a11b506d4e5600845eb913fa0d9bd714f"></a>
+<a class="el" href="classElementLinkList.html">ElementLinkList</a>&lt; T, DefaultValue &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_t row)</td></tr>
+<tr class="separator:a11b506d4e5600845eb913fa0d9bd714f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d1dd6759c1bdc3c284461d9e06bea3"><td class="memItemLeft" align="right" valign="top"><a id="ab5d1dd6759c1bdc3c284461d9e06bea3"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
+<tr class="separator:ab5d1dd6759c1bdc3c284461d9e06bea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a657f36a498ccfbad85bb05a7d7965a52"><td class="memItemLeft" align="right" valign="top"><a id="a657f36a498ccfbad85bb05a7d7965a52"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
+<tr class="separator:a657f36a498ccfbad85bb05a7d7965a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aa10d84f6d5da23449faeffa115a78d79"><td class="memItemLeft" align="right" valign="top"><a id="aa10d84f6d5da23449faeffa115a78d79"></a>
+<a class="el" href="classElement.html">Element</a>&lt; T, DefaultValue &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mDefaultElement</b></td></tr>
+<tr class="separator:aa10d84f6d5da23449faeffa115a78d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="matrix_8h_source.html">matrix.h</a></li>

@@ -18,7 +18,7 @@ BOOST_AUTO_TEST_SUITE( TestSuite )
     };
 
 BOOST_AUTO_TEST_CASE(testMatrix1) {
-        Matrix<int, -1> matrix;
+        Matrix<int, -1> matrix(0);
         BOOST_CHECK_EQUAL(matrix.size(), 0); // все ячейки свободны
         BOOST_CHECK_EQUAL(matrix[0][0], -1);
         BOOST_CHECK_EQUAL(matrix.size(), 0);
@@ -29,11 +29,7 @@ BOOST_AUTO_TEST_CASE(testMatrix1) {
         boost::test_tools::output_test_stream output;
         cout_redirect guard(output.rdbuf());
         for (auto c: matrix) {
-            int x;
-            int y;
-            int v;
-            std::tie(x, y, v) = c;
-            std::cout << x << y << v << std::endl;
+            std::cout << c.GetRow() << c.GetColumn() << c.GetVal() << std::endl;
         }
         BOOST_CHECK(output.is_equal("100100314\n"));
     }

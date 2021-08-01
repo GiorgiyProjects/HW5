@@ -3,23 +3,35 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classMatrix_aa40f0382d8561ca22eb36672cc42b466}\label{classMatrix_aa40f0382d8561ca22eb36672cc42b466}} 
-int {\bfseries size} ()
+\mbox{\Hypertarget{classMatrix_af3104ccba3068df1d64a877f2a105e3f}\label{classMatrix_af3104ccba3068df1d64a877f2a105e3f}} 
+size\+\_\+t {\bfseries Get\+Id} ()
 \item 
-\mbox{\Hypertarget{classMatrix_a9f8bef90bf8bba323b832cc58c50abff}\label{classMatrix_a9f8bef90bf8bba323b832cc58c50abff}} 
-\mbox{\hyperlink{classColumn}{Column}}$<$ T, m\+Default\+Value $>$ \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int i)
+\mbox{\Hypertarget{classMatrix_a6bf820e8bd8296ec6034e46aad9cffbf}\label{classMatrix_a6bf820e8bd8296ec6034e46aad9cffbf}} 
+{\bfseries Matrix} (size\+\_\+t id)
 \item 
-\mbox{\Hypertarget{classMatrix_ac51c4328b310232c27678a4ed2c44472}\label{classMatrix_ac51c4328b310232c27678a4ed2c44472}} 
-void {\bfseries Get\+All\+Non\+Def\+Values} ()
+\mbox{\Hypertarget{classMatrix_ae9e42cafafa13ebcf0005b4ad1d92fad}\label{classMatrix_ae9e42cafafa13ebcf0005b4ad1d92fad}} 
+size\+\_\+t {\bfseries size} () const
 \item 
-\mbox{\Hypertarget{classMatrix_af94fa0b8bc7d99ef0bb6d7622a8dade8}\label{classMatrix_af94fa0b8bc7d99ef0bb6d7622a8dade8}} 
-void {\bfseries Erase\+Default\+Keys} ()
+\mbox{\Hypertarget{classMatrix_a1ea3ce743946682197ab8af3352c1925}\label{classMatrix_a1ea3ce743946682197ab8af3352c1925}} 
+\mbox{\hyperlink{classElement}{Element}}$<$ T, Default\+Value $>$ $\ast$ {\bfseries Copy\+Default\+Element\+To\+Vec} (int row, int col, T val)
 \item 
-\mbox{\Hypertarget{classMatrix_aabe0405fb9aee5221fe5c396ac88ab5e}\label{classMatrix_aabe0405fb9aee5221fe5c396ac88ab5e}} 
-iterator {\bfseries begin} ()
+\mbox{\Hypertarget{classMatrix_ad7318f22f3db6afe13b965d480749b2f}\label{classMatrix_ad7318f22f3db6afe13b965d480749b2f}} 
+void {\bfseries erase} (\mbox{\hyperlink{classElement}{Element}}$<$ T, Default\+Value $>$ \&el)
 \item 
-\mbox{\Hypertarget{classMatrix_a68feb1c4514ee677647fef2d405c44e8}\label{classMatrix_a68feb1c4514ee677647fef2d405c44e8}} 
-iterator {\bfseries end} ()
+\mbox{\Hypertarget{classMatrix_a11b506d4e5600845eb913fa0d9bd714f}\label{classMatrix_a11b506d4e5600845eb913fa0d9bd714f}} 
+\mbox{\hyperlink{classElementLinkList}{Element\+Link\+List}}$<$ T, Default\+Value $>$ {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t row)
+\item 
+\mbox{\Hypertarget{classMatrix_ab5d1dd6759c1bdc3c284461d9e06bea3}\label{classMatrix_ab5d1dd6759c1bdc3c284461d9e06bea3}} 
+auto {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classMatrix_a657f36a498ccfbad85bb05a7d7965a52}\label{classMatrix_a657f36a498ccfbad85bb05a7d7965a52}} 
+auto {\bfseries end} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMatrix_aa10d84f6d5da23449faeffa115a78d79}\label{classMatrix_aa10d84f6d5da23449faeffa115a78d79}} 
+\mbox{\hyperlink{classElement}{Element}}$<$ T, Default\+Value $>$ {\bfseries m\+Default\+Element}
 \end{DoxyCompactItemize}
 
 

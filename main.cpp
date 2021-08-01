@@ -3,7 +3,7 @@
 
 int main()
 {
-    Matrix<int, 0> matrix;
+    Matrix<int, 0> matrix(0);
     for (int i = 0; i < 10; i++)
     {
         matrix[i][i] = i;
@@ -22,10 +22,6 @@ int main()
 
     for(auto c: matrix)
     {
-        int x;
-        int y;
-        int v;
-        std::tie(x, y, v) = c;
-        std::cout << x << y << v << std::endl;
+        std::cout << c.GetRow() << c.GetColumn() << c.GetVal() << std::endl;
     }
 }
