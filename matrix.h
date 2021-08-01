@@ -201,8 +201,6 @@ public:
         NewElem.SetVal(val);
         MatrixElementsPool<T, DefaultValue>[mId].push_back(NewElem);
 
-
-        std::cout << "pushed " << MatrixElementsPool<T, DefaultValue>[mId][MatrixElementsPool<T, DefaultValue>[mId].size() - 1]<< std::endl;
         return &MatrixElementsPool<T, DefaultValue>[mId][MatrixElementsPool<T, DefaultValue>[mId].size() - 1];
     }
 
